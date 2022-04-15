@@ -7,5 +7,17 @@
 */
 
 int main(){
-    return 0;
+	int c;
+	_Bool spaced = 0;
+	while((c = getchar()) != EOF)
+		{
+			if(c == ' ' && spaced != 1){
+				spaced = 1;
+				putchar(c);
+			}
+			else if (c != ' '){
+				spaced = 0;
+				putchar(c);
+			}
+		}
 }
