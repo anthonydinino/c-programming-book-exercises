@@ -26,6 +26,7 @@ int main()
     printf("\n");
     for (int i = 0; i < MAX_CHARACTERS + 1; ++i)
     {
+        int freq = arr[i];
         printf("%-3d| ", i);
         for (int j = 0; j < arr[i]; ++j)
             printf("*");
